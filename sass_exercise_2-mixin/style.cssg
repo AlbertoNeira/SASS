@@ -1,0 +1,75 @@
+.exercise {
+  border: 1px solid red;
+  width: 1250px;
+  display: flex;
+  justify-content: center;
+}
+
+.exercise-title {
+  display: flex;
+  color: green;
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: blue;
+  text-decoration-thickness: 2px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5%;
+}
+section .left {
+  display: flex;
+  height: 120px;
+  color: blue;
+  border: 1px solid green;
+  font-size: 16px;
+  align-items: center;
+  padding: 1.5%;
+  text-align: center;
+}
+section .mid-left {
+  display: flex;
+  height: 120px;
+  color: red;
+  border: 1px solid green;
+  font-size: 16px;
+  align-items: center;
+  padding: 1.5%;
+  text-align: center;
+}
+section .mid-right {
+  display: flex;
+  height: 120px;
+  color: blue;
+  border: 1px solid green;
+  font-size: 16px;
+  align-items: center;
+  padding: 1.5%;
+  text-align: center;
+}
+section .right {
+  display: flex;
+  height: 120px;
+  color: red;
+  border: 1px solid green;
+  font-size: 16px;
+  align-items: center;
+  padding: 1.5%;
+  text-align: center;
+}
+section .bot {
+  display: flex;
+  height: 120px;
+  color: green;
+  border: 1px solid blue;
+  font-size: 23px;
+  align-items: center;
+  padding: 1.5%;
+  text-align: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.cssg.map */

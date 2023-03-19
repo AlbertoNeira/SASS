@@ -1,0 +1,89 @@
+@use"module.scss" as m;
+@function rem($num){
+   
+    $calc:calc($num/16) +  rem;
+    @return $calc
+}
+  
+
+.exercise {
+    border: 1px solid red;
+    width: rem(1250);
+    display: flex;
+    justify-content: center;
+
+    }
+
+
+    %exercise-title {
+        display: flex;
+        flex-direction: column;
+        
+        color: green;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+        text-underline-offset: rem(10);
+        text-decoration-color:blue;
+        text-decoration-thickness: 2px;
+
+      
+       
+    }   
+    h1{
+        @extend %exercise-title;
+    }
+    .subtitle{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            @extend %exercise-title;
+            display: inline-block;
+            padding: rem(16);
+            border: rem(1) solid red;
+            text-align: center;
+           
+        }
+    }
+    
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin:1.5%;
+        article{
+        display: flex;
+    height: rem(120);
+    align-items: center;
+    padding: 1.5%;
+    text-align: center;
+    
+    
+
+}
+
+.left, .mid-right{
+    color:m.$color;
+    border: m.$border-color
+
+}
+.mid-left, .right{
+    color:red;
+    border: m.$border-color
+}
+
+
+.bot{
+    color:green;
+    border: 1px solid blue;
+    font-size: rem(24);
+    width:100%
+}
+    }
+    
+    
+

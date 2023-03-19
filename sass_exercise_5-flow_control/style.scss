@@ -1,0 +1,147 @@
+@use"module.scss" as m;
+@use "sass:color";
+@function rem($num){
+   
+    $calc:calc($num/16) +  rem;
+    @return $calc;
+}
+
+
+.exercise {
+    border: 1px solid red;
+    width: rem(1250);
+    display: flex;
+    justify-content: center;
+
+    }
+
+
+    %exercise-title {
+        display: flex;
+        flex-direction: column;
+        
+        color: green;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+        text-underline-offset: rem(10);
+        text-decoration-color:blue;
+        text-decoration-thickness: 2px;
+
+      
+       
+    }   
+    h1{
+        @extend %exercise-title;
+    }
+    .subtitle{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            @extend %exercise-title;
+            display: inline-block;
+            padding: rem(16);
+            border: rem(1) solid red;
+            text-align: center;
+           
+        }
+    }
+    
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin:1.5%;
+        article{
+        display: flex;
+    height: rem(120);
+    align-items: center;
+    padding: 1.5%;
+    text-align: center;
+    
+    
+
+}
+
+.left, .mid-right{
+    color:m.$color;
+    border: m.$border-color
+
+}
+.mid-left, .right{
+    color:red;
+    border: m.$border-color
+}
+
+
+.bot{
+    color:green;
+    border: 1px solid blue;
+    font-size: rem(24);
+    width:100%
+}
+    }
+
+    @for $index from 1 to 4{
+       
+
+    
+        @if $index == 1 {
+            .fs-#{$index}rem {
+                    width: 45px;
+                    height: 45px;
+                    border: 1px solid red;
+                    font-size: #{$index}rem;
+                    margin-right:1.5%;
+                             
+                }
+        }
+        @else if $index == 2 {
+            .fs-#{$index}rem {
+                    width: 45px;
+                    height: 45px;
+                    border: 1px solid red;
+                    font-size: #{$index}rem;
+                    margin-right:1.5%;
+                    
+            }
+        }
+        @else {
+            .fs-#{$index}rem {
+                    width: 45px;
+                    height: 45px;
+                    border: 1px solid red;
+                    font-size: #{$index}rem;
+                    margin-right:1.5%;
+                                   
+            }
+        }
+}
+
+
+$background-color: rgb(255, 255, 255);
+$text-color: rgb(13, 12, 12);
+$color-adjust-amount: 5%;
+
+@for $index from 1 to 20 {
+    @if $index ==10 {
+        .numbers div:nth-child(#{$index}) {
+            background-color: blue;
+            color: red;
+        }
+    }
+    @else {
+    .numbers div:nth-child(#{$index}) {
+        background-color: $background-color;
+        color: $text-color;
+    }
+    }
+  $background-color: color.adjust($background-color, $lightness: -$color-adjust-amount);
+  $text-color: color.adjust($text-color, $lightness: $color-adjust-amount);
+}
+    
+  

@@ -1,0 +1,43 @@
+.exercise {
+  border: 1px solid red;
+  width: 1250px;
+  display: flex;
+  justify-content: center;
+}
+.exercise .exercise-title {
+  display: flex;
+  color: rgb(46, 156, 46);
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: blue;
+  text-decoration-thickness: 2px;
+}
+.exercise section {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5%;
+}
+.exercise section article {
+  display: flex;
+  height: 120px;
+  border: 1px solid rgb(46, 156, 46);
+}
+.exercise section article .p1 {
+  display: flex;
+  color: blue;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  margin: 3%;
+}
+.exercise section article .p2 {
+  display: flex;
+  color: red;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  margin: 3%;
+}
+
+/*# sourceMappingURL=style.css.map */

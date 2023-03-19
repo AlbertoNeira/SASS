@@ -1,0 +1,63 @@
+$color-primary: red;
+$color-secundary: blue;
+$color-terciary: rgb(46, 156, 46);
+
+.exercise {
+border: 1px solid $color-primary;
+width: 1250px;
+display: flex;
+justify-content: center;
+
+    .exercise-title {
+        display: flex;
+        
+    color: $color-terciary;
+    justify-content: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: $color-secundary;
+    text-decoration-thickness: 2px;
+    
+}   
+    section{
+        display: flex;
+        flex-direction: row;
+        margin:1.5%;
+        article{
+            display: flex;
+            height: 120px;
+            border: 1px solid $color-terciary;
+            
+            .p1{
+                display: flex;
+                color:$color-secundary;
+                justify-items: center;
+                text-align: center;
+                align-items: center;
+                margin: 3%;
+    
+                
+                }
+            
+            
+            .p2{
+                display: flex;
+                color:$color-primary;
+                justify-items: center;
+                text-align: center;
+                align-items: center;
+                margin: 3%;
+    
+                
+                }
+        
+        }
+
+    }
+
+
+        
+    
+
+   
+}

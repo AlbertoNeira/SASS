@@ -1,0 +1,70 @@
+
+.exercise {
+    border: 1px solid red;
+    width: 1250px;
+    display: flex;
+    justify-content: center;
+
+}
+
+@mixin colors($color:blue, $border-color:green,$font-size:16px){
+    display: flex;
+    height: 120px;
+    color:$color;
+    border: 1px solid $border-color;
+    font-size: $font-size;
+    align-items: center;
+    padding: 1.5%;
+    text-align: center;
+}
+
+@mixin albertoArea($albertoOrange: orange){
+    color:$albertoOrange
+}
+
+
+.Alberto{
+    @include albertoArea()
+}
+.exercise-title {
+    display: flex;
+    
+color: green;
+justify-content: center;
+text-decoration: underline;
+text-underline-offset: 10px;
+text-decoration-color:blue;
+text-decoration-thickness: 2px;
+
+}   
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin:1.5%;
+    .left{
+        @include colors()
+
+    }
+    .mid-left{
+        @include colors(red)
+    }
+
+    .mid-right{
+        @include colors()
+    
+    }
+
+    .right{
+        @include colors(red)
+    }
+
+    .bot{
+        @include colors(green,blue,23px);
+        width:100%
+    }
+
+}
+
+
+
